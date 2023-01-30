@@ -10,7 +10,7 @@ const http = require("http");
 const server = http.createServer((request, response) => {
 
     if(request.url === "/users") {
-        if(request.method === "GET") {
+        if (request.method === "GET") {
             return response.end("A aplicação esta no ar!")
         }
         if (request.method === "POST") {
